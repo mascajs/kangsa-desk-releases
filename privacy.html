@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침</title>
+<meta name="description" content="강사데스크 개인정보처리방침">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>개인정보처리방침</h1>
+    <p>강사데스크 · 시행일 2026년 11월 14일</p>
+  </header>
+  <nav>
+    <a href="./">강사데스크 소개</a>
+    <a href="terms.html">이용 약관</a>
+  </nav>
+
+  <section>
+    <h2>1. 요약</h2>
+    <p>강사데스크는 사용자의 PC에서만 동작하는 Windows 앱입니다. 개발자는 별도의 서버를 운영하지 않으며, 사용자의 구글 데이터나 앱 데이터를 수집·보관·열람하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>2. 구글 사용자 데이터의 접근과 사용</h2>
+    <p>사용자가 구글 계정으로 로그인하면 앱은 아래 권한만 요청합니다.</p>
+    <ul>
+      <li><b>Google 캘린더 읽기 (calendar.readonly)</b>: 일정의 제목·시간·장소를 읽어 강의를 알아보고, 달력·오늘 수업·회차·준비 할 일·서류 마감을 화면에 보여 주는 데만 씁니다. 일정을 만들거나 고치거나 지우지 않습니다.</li>
+      <li><b>Google 드라이브 – 앱이 만든 파일 (drive.file)</b>: 사용자가 백업·동기화를 켠 경우에만 요청합니다. 사용자 드라이브의 '강사데스크 백업' 폴더에 앱 데이터 백업 파일과 동기화 파일을 만들고 읽습니다. 이 앱이 만들지 않은 드라이브 파일에는 접근할 수 없습니다.</li>
+    </ul>
+    <p>구글에서 받은 데이터는 위 기능을 사용자에게 제공하는 데만 쓰며, 다른 사람에게 판매·전송·공유하지 않고, 광고나 사람의 열람, AI 모델 학습에 쓰지 않습니다.</p>
+    <p>강사데스크가 Google API로 받은 정보를 사용하고 다른 앱으로 전송하는 방식은 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 저장 위치</h2>
+    <ul>
+      <li><b>사용자의 PC</b>: 메모, 할 일, D-Day, 서류 체크, 수업 링크, 회차 메모, 설정, 받아 둔 일정(오프라인 표시용)은 PC의 앱 데이터 폴더(<code>%APPDATA%\kangsa-desk</code>)에 저장됩니다.</li>
+      <li><b>로그인 정보</b>: 구글 로그인 토큰은 Windows 암호화 기능으로 암호화해 해당 PC에만 저장합니다.</li>
+      <li><b>사용자 본인의 구글 드라이브</b>: 백업·동기화를 켠 경우에만, 위 앱 데이터를 '강사데스크 백업' 폴더에 저장합니다. 백업은 최근 14개까지 보관합니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. 외부로 보내는 정보</h2>
+    <ul>
+      <li><b>Google</b>: 캘린더·드라이브 요청(사용자 본인의 계정).</li>
+      <li><b>Open-Meteo</b> (날씨): 지역의 위도·경도.</li>
+      <li><b>OpenStreetMap Nominatim</b> (장소 찾기): 사용자가 입력한 지역 이름, 일정의 장소 또는 출강처 이름.</li>
+      <li><b>GitHub</b>: 새 버전 확인(앱 버전 정보).</li>
+    </ul>
+    <p>이 밖의 곳으로 정보를 보내지 않으며, 사용 통계나 광고 추적을 하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>5. 삭제와 권한 철회</h2>
+    <ul>
+      <li>앱 설정에서 로그아웃하면 PC의 로그인 정보가 지워집니다.</li>
+      <li><a href="https://myaccount.google.com/permissions">Google 계정 → 타사 앱 및 서비스</a>에서 언제든 강사데스크의 접근 권한을 철회할 수 있습니다.</li>
+      <li>앱을 제거하고 <code>%APPDATA%\kangsa-desk</code> 폴더를 지우면 PC의 데이터가 모두 지워집니다.</li>
+      <li>드라이브의 '강사데스크 백업' 폴더를 지우면 백업·동기화 데이터가 지워집니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. 권장 사항</h2>
+    <p>회차 메모나 서류 메모에는 학생 이름 등 다른 사람의 개인정보를 적지 않는 것을 권합니다.</p>
+  </section>
+
+  <section>
+    <h2>7. 변경과 문의</h2>
+    <p>이 방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다. 문의는 <a href="https://github.com/mascajs/kangsa-desk-releases/issues">GitHub 이슈</a>로 남겨 주세요.</p>
+  </section>
+</main>
+</body>
+</html>
